@@ -91,9 +91,7 @@ main > div > div > div > div {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-}
-
-main > div > div > div > div > div {
+	position: relative;
 }
 
 main > div > div > div > div > div > h1 {
@@ -127,6 +125,50 @@ main > div > div > div > div > h2 {
 	color: #000000;
 }
 
+main > div > div > div > div > ion-icon {
+	color: #32B72F;
+	font-size: 16px;
+	position: absolute;
+	right: -2px;
+	bottom: 2px;
+	display: none;
+}
+
 .selected {
 	box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+}
+
+
+
+.selected ion-icon {
+	display: inline;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #FFFFFF;
+	height: 92px;
+	max-width: 100vw;
+}
+
+footer button {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 23px;
+	text-align: center;
+	letter-spacing: 0.018em;
+
+	width: 364px;
+	height: 61px;
+	border: none;
+	border-radius: 50px;
+	background-color: blue;
+}
+
+footer button:disabled {
+	background-color: #cbcbcb;
 }
