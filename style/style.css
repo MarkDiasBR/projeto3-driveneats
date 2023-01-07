@@ -84,6 +84,8 @@ main > div > div > div > img {
 	width: 144px;
 	height: 87px;
 	border-radius: 4px;
+	object-fit: cover;
+	background-color: red;
 }
 
 main > div > div > div > div {
