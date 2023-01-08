@@ -14,6 +14,7 @@ header {
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 	padding-left: 21px;
+	margin-bottom: 31px;
 
 	display: flex;
 	flex-direction: column;
@@ -50,18 +51,20 @@ main > div > p {
 	letter-spacing: 0.018em;
 	color: #333333;
 	margin-left: 19px;
+	margin-top: 27px;
+	margin-bottom: 13px
 }
 
 main > div > div {
 	box-sizing: border-box;
 	width: 100%;
-	padding-bottom: 10px;
+	padding-bottom: 16px;
 	padding-left: 19px;
 	padding-right: 19px;
 	display: flex;
 	overflow-x: scroll;
 	gap: 16px;
-
+	margin-bottom: 24px
 }
 
 main > div > div > div {
@@ -85,7 +88,48 @@ main > div > div > div > img {
 	height: 87px;
 	border-radius: 4px;
 	object-fit: cover;
+}
+
+main > div > div > div > img:nth-of-type() {
 	background-color: red;
+}
+
+main > div > div > div > img {
+	background-color: lightskyblue;
+}
+
+main > div > div:nth-of-type(2) > div:nth-of-type(1) > img,
+main > div > div:nth-of-type(2) > div:nth-of-type(2) > img,
+main > div > div:nth-of-type(2) > div:nth-of-type(3) > img {
+	background-color: #fe001a;
+}
+
+main > div > div:nth-of-type(2) > div:nth-of-type(4) > img {
+	background-color: #FF8201;
+}
+
+main > div > div:nth-of-type(2) > div:nth-of-type(5) > img {
+	background-color: #572364;
+}
+
+main > div > div:nth-of-type(2) > div:nth-of-type(6) > img {
+	background-color: #edc505;
+}
+
+main > div > div:nth-of-type(2) > div:nth-of-type(7) > img {
+	background-color: #358e8c;
+}
+
+main > div > div:nth-of-type(2) > div:nth-of-type(8) > img {
+	background-color: #ebb536;
+}
+
+main > div > div:nth-of-type(2) > div:nth-of-type(9) > img {
+	background-color: #bcc391;
+}
+
+main > div > div:nth-of-type(2) > div:nth-of-type(10) > img {
+	background-color: #Cae00d;
 }
 
 main > div > div > div > div {
@@ -164,11 +208,21 @@ footer button {
 	text-align: center;
 	letter-spacing: 0.018em;
 
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 23px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.018em;
+
 	width: 364px;
 	height: 61px;
 	border: none;
 	border-radius: 50px;
-	background-color: blue;
+	background-color: #32B72F;
 }
 
 footer button:disabled {

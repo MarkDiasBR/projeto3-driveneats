@@ -20,9 +20,9 @@
 	<main>
 		<div>
 			<p>Primeiro, seu prato</p>
-			<div>
-				<div>	
-					<img src="./img/frango3.jpg" alt="Frango yin yang">
+			<div class="prato-principal">
+				<div onClick="selecionarPrato(this)">	
+					<img src="./img/frango3.jpg" alt="Frango da bila">
 					<div>
 						<div>
 							<h1>Frango da Bila</h1>
@@ -32,7 +32,7 @@
 						<ion-icon name="checkmark-circle"></ion-icon>
 					</div>
 				</div>
-				<div>	
+				<div onClick="selecionarPrato(this)">	
 					<img src="./img/frango1.jpg" alt="Frango Shifu" style="object-fit: cover; object-position: center 83%;">
 					<div>
 						<div>
@@ -43,7 +43,7 @@
 						<ion-icon name="checkmark-circle"></ion-icon>
 					</div>
 				</div>
-				<div>	
+				<div onClick="selecionarPrato(this)">	
 					<img src="./img/frango2.jpg" alt="Frango yin yang">
 					<div>
 						<div>
@@ -54,7 +54,7 @@
 						<ion-icon name="checkmark-circle"></ion-icon>
 					</div>
 				</div>
-				<div>	
+				<div onClick="selecionarPrato(this)">	
 					<img src="./img/frango4.jpg" alt="Frango yin yang">
 					<div>
 						<div>
@@ -247,7 +247,7 @@
 						<ion-icon name="checkmark-circle"></ion-icon>
 					</div>
 				</div>
-				<div>	
+				<div class="selected">	
 					<img src="./img/pave.webp" height="87" alt="Pavê" style="object-fit: cover; object-position: center 36%">
 					<div>
 						<div>
@@ -262,11 +262,12 @@
 		</div>
 	</main>
 	<footer>
-		<button disabled="disabled">
+		<button disabled>
 			Selecione os 3 itens<br>para fechar o pedido
 		</button>
 	</footer>
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<script src="./script/script.js"></script>
 </body>
 </html>
