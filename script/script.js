@@ -123,3 +123,19 @@ function cancelarPedido() {
 	document.querySelector(".background").classList.remove("fechar-pedido");
 	document.body.classList.remove("fechar-pedido");
 }
+
+function enviarPedido() {
+	let nomeCliente = prompt("Qual o seu nome?");
+	let enderecoCliente = prompt("Qual o endereço de entrega?");
+	
+	let textoWhatsApp = `Olá, gostaria de fazer o pedido:
+	- Prato: ${pratoPedido}
+	- Bebida: ${bebidaPedido}
+	- Sobremesa: ${sobremesaPedido}
+	Total: ${precoTotal}
+
+
+	Nome: ${nomeCliente}
+	Endereço: ${enderecoCliente}`
+	window.open("https://wa.me/5571996597302?text=" + encodeURIComponent(textoWhatsApp), "_blank");
+}
