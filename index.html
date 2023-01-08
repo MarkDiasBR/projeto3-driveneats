@@ -13,6 +13,41 @@
 	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
 <body>
+	<div class="background">
+		<div data-test="confirm-order-modal" class="resumo-pedido">
+			<table>
+				<thead>
+					<tr>
+						<th colspan="2">Confirme seu pedido</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="confirmaPrato">The table body</td>
+						<td class="confirmaPrecoPrato">with two columns</td>
+					</tr>
+					<tr>
+						<td class="confirmaBebida">The table body</td>
+						<td class="confirmaPrecoBebida">with two columns</td>
+					</tr>
+					<tr>
+						<td class="confirmaSobremesa">The table body</td>
+						<td class="confirmaPrecoSobremesa">with two columns</td>
+					</tr>
+					<tr>
+						<td class="confirmaTotal">TOTAL</td>
+						<td  class="confirmaPrecoTotal">sla</td>
+					</tr>
+				</tbody>
+			</table>
+			<button data-test="confirm-order-btn">
+				Tudo certo, pode pedir!
+			</button>
+			<button data-test="cancel-order-btn" onclick="cancelarPedido()">
+				Cancelar
+			</button>
+		</div>
+	</div>
 	<header>
 		<h1>Driven Eats</h1>
 		<p>Sua comida em 6 minutos</p>
@@ -182,7 +217,7 @@
 					<img src="./img/agua.png" alt="Água mineral" style="object-fit: cover; object-position: center 41%">
 					<div>
 						<div>
-							<h1 data-test="item-name" class="nomeBebida">Água Crystal sem gás</h1>
+							<h1 data-test="item-name" class="nomeBebida">Água sem gás</h1>
 							<p>garrafa, 500 ml</p>
 						</div>
 						<h2 data-test="item-price" class="precoBebida">R$ 4,00</h2>
@@ -193,7 +228,7 @@
 					<img src="./img/agua-com-gas.png" alt="Água mineral com gás" style="object-fit: cover; object-position: center 41%">
 					<div>
 						<div>
-							<h1 data-test="item-name" class="nomeBebida">Água Crystal com gás</h1>
+							<h1 data-test="item-name" class="nomeBebida">Água com gás</h1>
 							<p>garrafa, 500 ml</p>
 						</div>
 						<h2 data-test="item-price" class="precoBebida">R$ 4,00</h2>
@@ -260,9 +295,10 @@
 				</div>
 			</div>
 		</div>
+		
 	</main>
 	<footer>
-		<button disabled data-test="order-btn" class="botao-confirmar-pedido">
+		<button onclick="finalizarPedido()" disabled data-test="order-btn" class="botao-confirmar-pedido">
 			Selecione os 3 itens <br>para fechar o pedido
 		</button>
 	</footer>

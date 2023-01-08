@@ -87,6 +87,8 @@ function selecionarSobremesa(containerClicado) {
 	verificarPedido()
 }
 
+let = preco
+
 function verificarPedido() {
 	if (pratoPedido !== undefined && bebidaPedido !== undefined && sobremesaPedido !== undefined) {
 		document.querySelector(".botao-confirmar-pedido").disabled = false;
@@ -95,4 +97,29 @@ function verificarPedido() {
 		document.querySelector(".botao-confirmar-pedido").disabled = true;
 		document.querySelector(".botao-confirmar-pedido").innerHTML = "Selecione os 3 itens <br>para fechar o pedido";
 	}
+}
+
+function finalizarPedido() {
+	document.querySelector(".confirmaPrato").innerHTML = pratoPedido;
+	document.querySelector(".confirmaPrecoPrato").innerHTML = precoPratoPedido;
+
+	document.querySelector(".confirmaBebida").innerHTML = bebidaPedido;
+	document.querySelector(".confirmaPrecoBebida").innerHTML = precoBebidaPedido;
+	
+	document.querySelector(".confirmaSobremesa").innerHTML = sobremesaPedido;
+	document.querySelector(".confirmaPrecoSobremesa").innerHTML = precoSobremesaPedido;
+
+	let precoTotal = Number(precoPratoPedido.replace("R$ ", "").replace(",",".")) + Number(precoBebidaPedido.replace("R$ ", "").replace(",",".")) + Number(precoSobremesaPedido.replace("R$ ", "").replace(",","."));
+
+	precoTotal = "R$ "+ precoTotal.toFixed(2).replace(".", ",");
+
+	document.querySelector(".confirmaPrecoTotal").innerHTML = precoTotal;
+
+	document.querySelector(".background").classList.add("fechar-pedido");
+	document.body.classList.add("fechar-pedido");
+}
+
+function cancelarPedido() {
+	document.querySelector(".background").classList.remove("fechar-pedido");
+	document.body.classList.remove("fechar-pedido");
 }

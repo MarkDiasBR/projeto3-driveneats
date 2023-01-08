@@ -228,3 +228,119 @@ footer button:disabled {
 	letter-spacing: 0.018em;
 	background-color: #cbcbcb;
 }
+
+.body {
+	position: relative;
+}
+
+html, body {
+	height: 100%;
+}
+
+.background {
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.9);
+	position:fixed;
+	top: 0;
+	right: 0;
+	z-index: 2;
+	display: none;
+}
+
+.resumo-pedido {
+	padding-top: 23px;
+	padding-bottom: 34px;
+	width: calc(100vw - 38px);
+	background: #50D074;
+	box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+	border-radius: 9px;
+
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.background.fechar-pedido {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+body.fechar-pedido {
+	overflow-y: hidden;
+}
+
+table  {
+	width: calc(100% - 30px);
+	margin: 0 auto;
+	border-style: solid;
+	border-collapse: collapse;
+}
+
+th {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 26px;
+	text-align: center;
+	color: #ffffff;
+	letter-spacing: 0.018em;
+	border-bottom: 21px solid transparent;
+}
+
+tr {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 26px;
+	letter-spacing: 0.018em;
+	color: #FFFFFF;
+	border-bottom: 13px solid transparent;
+}
+
+tr:last-child {
+	font-weight: 700;
+}
+
+td:last-child {
+	text-align: right;
+	width: 92px;
+}
+
+.resumo-pedido > button:nth-last-child(2) {
+	margin-top: 20px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 26px;
+	text-align: center;
+	letter-spacing: 0.018em;
+	color: #50D074;
+	background: #FFFFFF;
+	border-radius: 100px;
+	border: none;
+	width: calc(100% - 30px);
+	height: 52px;
+}
+
+
+
+.resumo-pedido > button:last-child {
+	margin-top: 20px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 23px;
+	text-align: center;
+	letter-spacing: 0.018em;
+	color: #FFFFFF;
+	background: #50D074;
+	border: none;
+	width: calc(100% - 30px);
+}
