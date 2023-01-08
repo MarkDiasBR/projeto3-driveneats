@@ -200,31 +200,31 @@ footer {
 }
 
 footer button {
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 20px;
-	line-height: 23px;
-	text-align: center;
-	letter-spacing: 0.018em;
-
-	font-family: 'Roboto';
+	font-family: 'Roboto', sans-serif;
 	font-style: normal;
 	font-weight: 700;
 	font-size: 20px;
 	line-height: 23px;
 	display: flex;
 	align-items: center;
-	text-align: center;
+	justify-content: center;
 	letter-spacing: 0.018em;
+	color: #FFF;
+	background-color: #32B72F;	
 
 	width: 364px;
 	height: 61px;
 	border: none;
 	border-radius: 50px;
-	background-color: #32B72F;
 }
 
 footer button:disabled {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 23px;
+	text-align: center;
+	letter-spacing: 0.018em;
 	background-color: #cbcbcb;
 }
