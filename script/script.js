@@ -131,8 +131,17 @@ function cancelarPedido() {
 let precoFinal;
 
 function enviarPedido() {
-    const nomeCliente = prompt("Qual o seu nome?");
-    const enderecoCliente = prompt("Qual o endereço de entrega?");
+    let nomeCliente = prompt("Qual o seu nome?");
+    alert(typeof nomeCliente);
+    let enderecoCliente = prompt("Qual o endereço de entrega?");
+
+    if (nomeCliente === null || nomeCliente === "") {
+        nomeCliente = "Não informado";
+    }
+
+    if (enderecoCliente === null || enderecoCliente === "") {
+        enderecoCliente = "Não informado";
+    }
 
     precoFinal = document.querySelector(".confirmaPrecoTotal").innerHTML;
 
@@ -145,5 +154,6 @@ function enviarPedido() {
 
     Nome: ${nomeCliente}
     Endereço: ${enderecoCliente}`;
+
     window.open("https://wa.me/5571996597302?text=" + encodeURIComponent(textoWhatsApp));
 }
