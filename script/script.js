@@ -132,7 +132,7 @@ let precoFinal;
 
 function enviarPedido() {
     let nomeCliente = prompt("Qual o seu nome?");
-    alert(typeof nomeCliente);
+
     let enderecoCliente = prompt("Qual o endereço de entrega?");
 
     if (nomeCliente === null || nomeCliente === "") {
