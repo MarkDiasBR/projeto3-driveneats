@@ -1,365 +1,365 @@
 body {
-	font-family: 'Roboto', sans-serif;
-	background-color: #e5e5e5;
-	margin-top: 110px;
-	padding-bottom: 80px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #e5e5e5;
+    margin-top: 110px;
+    padding-bottom: 80px;
 }
 
 header h1 {
-	font-family: 'Righteous', cursive;
+    font-family: 'Righteous', cursive;
 }
 
 header {
-	width: 100vw;
-	height: 92px;
-	background-color: #CF2B2B;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100vw;
+    height: 92px;
+    background-color: #CF2B2B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-	padding-left: 21px;
-	margin-bottom: 31px;
+    padding-left: 21px;
+    margin-bottom: 31px;
 
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-	position: fixed;
-	top: 0;
-	right: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
 
-	z-index: 2;
+    z-index: 2;
 }
 
 header h1 {
-	padding-left: 21px;
-	font-family: 'Righteous';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 44px;
-	line-height: 55px;
-	letter-spacing: -0.012em;
-	color: #FFFFFF;
-	margin: 0;
+    padding-left: 21px;
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 55px;
+    letter-spacing: -0.012em;
+    color: #FFFFFF;
+    margin: 0;
 }
 
 header p {
-	padding-left: 21px;
-	margin: 0;
-	margin-top: -3px;
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 21px;
-	color: #FFFFFF;
-	
+    padding-left: 21px;
+    margin: 0;
+    margin-top: -3px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    
 }
 
 main {
-	padding-bottom: 92px;
+    padding-bottom: 92px;
 }
 
 main > div > p {
-	font-family: 'Righteous';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 26px;
-	line-height: 32px;
-	letter-spacing: 0.018em;
-	color: #333333;
-	margin-left: 19px;
-	margin-top: 27px;
-	margin-bottom: 13px
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.018em;
+    color: #333333;
+    margin-left: 19px;
+    margin-top: 27px;
+    margin-bottom: 13px
 }
 
 main > div > div {
-	box-sizing: border-box;
-	width: 100%;
-	padding-bottom: 16px;
-	padding-left: 19px;
-	padding-right: 19px;
-	display: flex;
-	overflow-x: scroll;
-	gap: 16px;
-	margin-bottom: 24px
+    box-sizing: border-box;
+    width: 100%;
+    padding-bottom: 16px;
+    padding-left: 19px;
+    padding-right: 19px;
+    display: flex;
+    overflow-x: scroll;
+    gap: 16px;
+    margin-bottom: 24px
 }
 
 main > div > div > div {
-	box-sizing: border-box;
-	flex-shrink: 0;
-	width: 172px;
-	height: 216px;
-	background-color: #FFFFFF;
-	box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
-	border-radius: 9px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 172px;
+    height: 216px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
 
-	padding: 18px 14px 14px;
+    padding: 18px 14px 14px;
 
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 main > div > div > div > img {
-	width: 144px;
-	height: 87px;
-	border-radius: 4px;
-	object-fit: cover;
+    width: 144px;
+    height: 87px;
+    border-radius: 4px;
+    object-fit: cover;
 }
 
 main > div > div > div > img:nth-of-type() {
-	background-color: red;
+    background-color: red;
 }
 
 main > div > div > div > img {
-	background-color: lightskyblue;
+    background-color: lightskyblue;
 }
 
 main > div > div:nth-of-type(2) > div:nth-of-type(1) > img,
 main > div > div:nth-of-type(2) > div:nth-of-type(2) > img,
 main > div > div:nth-of-type(2) > div:nth-of-type(3) > img {
-	background-color: #fe001a;
+    background-color: #fe001a;
 }
 
 main > div > div:nth-of-type(2) > div:nth-of-type(4) > img {
-	background-color: #FF8201;
+    background-color: #FF8201;
 }
 
 main > div > div:nth-of-type(2) > div:nth-of-type(5) > img {
-	background-color: #572364;
+    background-color: #572364;
 }
 
 main > div > div:nth-of-type(2) > div:nth-of-type(6) > img {
-	background-color: #edc505;
+    background-color: #edc505;
 }
 
 main > div > div:nth-of-type(2) > div:nth-of-type(7) > img {
-	background-color: #358e8c;
+    background-color: #358e8c;
 }
 
 main > div > div:nth-of-type(2) > div:nth-of-type(8) > img {
-	background-color: #ebb536;
+    background-color: #ebb536;
 }
 
 main > div > div:nth-of-type(2) > div:nth-of-type(9) > img {
-	background-color: #bcc391;
+    background-color: #bcc391;
 }
 
 main > div > div:nth-of-type(2) > div:nth-of-type(10) > img {
-	background-color: #Cae00d;
+    background-color: #Cae00d;
 }
 
 main > div > div > div > div {
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
 }
 
 main > div > div > div > div > div > h1 {
-	margin-top: 8px;
+    margin-top: 8px;
 
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 19px;
-	color: #333333;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
 }
 
 main > div > div > div > div > div  p {
-	margin-top: 2px;
+    margin-top: 2px;
 
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 300;
-	font-size: 15px;
-	line-height: 18px;
-	color: #A6A6A6;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: #A6A6A6;
 }
 
 main > div > div > div > div > h2 {
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 19px;
-	color: #000000;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
 }
 
 main > div > div > div > div > ion-icon {
-	color: #32B72F;
-	font-size: 16px;
-	position: absolute;
-	right: -2px;
-	bottom: 2px;
-	display: none;
+    color: #32B72F;
+    font-size: 16px;
+    position: absolute;
+    right: -2px;
+    bottom: 2px;
+    display: none;
 }
 
 .selected {
-	box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
 }
 
 
 
 .selected ion-icon {
-	display: inline;
+    display: inline;
 }
 
 footer {
-	position: fixed;
-	bottom: 0;
-	right: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #FFFFFF;
-	height: 92px;
-	width: 100vw;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    height: 92px;
+    width: 100vw;
 }
 
 footer button {
-	font-family: 'Roboto', sans-serif;
-	font-style: normal;
-	font-weight: 700;
-	font-size: 20px;
-	line-height: 23px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	letter-spacing: 0.018em;
-	color: #FFF;
-	background-color: #32B72F;	
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.018em;
+    color: #FFF;
+    background-color: #32B72F;	
 
-	width: 364px;
-	height: 61px;
-	border: none;
-	border-radius: 50px;
+    width: 364px;
+    height: 61px;
+    border: none;
+    border-radius: 50px;
 }
 
 footer button:disabled {
-	font-family: 'Roboto', sans-serif;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 20px;
-	line-height: 23px;
-	text-align: center;
-	letter-spacing: 0.018em;
-	background-color: #cbcbcb;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.018em;
+    background-color: #cbcbcb;
 }
 
 .body {
-	position: relative;
+    position: relative;
 }
 
 html, body {
-	height: 100%;
+    height: 100%;
 }
 
 .background {
-	width: 100%;
-	height: 100%;
-	background: rgba(255, 255, 255, 0.9);
-	position:fixed;
-	top: 0;
-	right: 0;
-	z-index: 3;
-	display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    position:fixed;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    display: none;
 }
 
 .resumo-pedido {
-	padding-top: 23px;
-	padding-bottom: 34px;
-	width: calc(100vw - 38px);
-	background: #50D074;
-	box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
-	border-radius: 9px;
+    padding-top: 23px;
+    padding-bottom: 34px;
+    width: calc(100vw - 38px);
+    background: #50D074;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
 
-	display:flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .background.fechar-pedido {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 body.fechar-pedido {
-	overflow-y: hidden;
+    overflow-y: hidden;
 }
 
 table  {
-	width: calc(100% - 30px);
-	margin: 0 auto;
-	border-style: solid;
-	border-collapse: collapse;
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    border-style: solid;
+    border-collapse: collapse;
 }
 
 th {
-	font-family: 'Roboto', sans-serif;
-	font-style: normal;
-	font-weight: 700;
-	font-size: 22px;
-	line-height: 26px;
-	text-align: center;
-	color: #ffffff;
-	letter-spacing: 0.018em;
-	border-bottom: 21px solid transparent;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #ffffff;
+    letter-spacing: 0.018em;
+    border-bottom: 21px solid transparent;
 }
 
 tr {
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 22px;
-	line-height: 26px;
-	letter-spacing: 0.018em;
-	color: #FFFFFF;
-	border-bottom: 13px solid transparent;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
+    border-bottom: 13px solid transparent;
 }
 
 tr:last-child {
-	font-weight: 700;
+    font-weight: 700;
 }
 
 td:last-child {
-	text-align: right;
-	width: 92px;
+    text-align: right;
+    width: 92px;
 }
 
 .resumo-pedido > button:nth-last-child(2) {
-	margin-top: 20px;
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 700;
-	font-size: 22px;
-	line-height: 26px;
-	text-align: center;
-	letter-spacing: 0.018em;
-	color: #50D074;
-	background: #FFFFFF;
-	border-radius: 100px;
-	border: none;
-	width: calc(100% - 30px);
-	height: 52px;
+    margin-top: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.018em;
+    color: #50D074;
+    background: #FFFFFF;
+    border-radius: 100px;
+    border: none;
+    width: calc(100% - 30px);
+    height: 52px;
 }
 
 
 
 .resumo-pedido > button:last-child {
-	margin-top: 20px;
-	font-family: 'Roboto', sans-serif;
-	font-style: normal;
-	font-weight: 700;
-	font-size: 20px;
-	line-height: 23px;
-	text-align: center;
-	letter-spacing: 0.018em;
-	color: #FFFFFF;
-	background: #50D074;
-	border: none;
-	width: calc(100% - 30px);
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
+    background: #50D074;
+    border: none;
+    width: calc(100% - 30px);
 }

@@ -1,309 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Driven Eats</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="./style/reset.css">
-	<link rel="stylesheet" href="./style/style.css">
-	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driven Eats</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
 <body>
-	<div class="background">
-		<div data-test="confirm-order-modal" class="resumo-pedido">
-			<table>
-				<thead>
-					<tr>
-						<th colspan="2" scope="row">Confirme seu pedido</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td class="confirmaPrato">The table body</td>
-						<td class="confirmaPrecoPrato">with two columns</td>
-					</tr>
-					<tr>
-						<td class="confirmaBebida">The table body</td>
-						<td class="confirmaPrecoBebida">with two columns</td>
-					</tr>
-					<tr>
-						<td class="confirmaSobremesa">The table body</td>
-						<td class="confirmaPrecoSobremesa">with two columns</td>
-					</tr>
-					<tr>
-						<td class="confirmaTotal">TOTAL</td>
-						<td  class="confirmaPrecoTotal">sla</td>
-					</tr>
-				</tbody>
-			</table>
-			<button data-test="confirm-order-btn" onclick="enviarPedido()">
-				Tudo certo, pode pedir!
-			</button>
-			<button data-test="cancel-order-btn" onclick="cancelarPedido()">
-				Cancelar
-			</button>
-		</div>
-	</div>
-	<header>
-		<h1>Driven Eats</h1>
-		<p>Sua comida em 6 minutos</p>
-	</header>
-	<main>
-		<div>
-			<p>Primeiro, seu prato</p>
-			<div class="prato-principal">
-				<div onclick="selecionarPrato(this)" class="prato" data-test="dish">	
-					<img src="./img/frango3.jpg" alt="Frango da bila">
-					<div>
-						<div>
-							<h1 data-test="item-name" class="nomePrato">Frango da Bila</h1>
-							<p>1 coxa, 1 sobrecoxa, batata crinkle, salada </p>
-						</div>
-						<h2 data-test="item-price" class="precoPrato">R$ 17,90</h2>
-						<ion-icon name="checkmark-circle"></ion-icon>
-					</div>
-				</div>
-				<div onclick="selecionarPrato(this)" class="prato" data-test="dish">	
-					<img src="./img/frango1.jpg" alt="Frango" style="object-fit: cover; object-position: center 83%;">
-					<div>
-						<div>
-							<h1 data-test="item-name" class="nomePrato">Frango do Mr. Pink</h1>
-							<p>2 coxas, batata frita, salada</p>
-						</div>
-						<h2 data-test="item-price" class="precoPrato">R$ 14,90</h2>
-						<ion-icon name="checkmark-circle"></ion-icon>
-					</div>
-				</div>
-				<div onclick="selecionarPrato(this)" class="prato" data-test="dish">	
-					<img src="./img/frango2.jpg" alt="Frango yin yang">
-					<div>
-						<div>
-							<h1 data-test="item-name" class="nomePrato">Frango do Dudu</h1>
-							<p>3 coxinhas da asa, batata frita, salada</p>
-						</div>
-						<h2 data-test="item-price" class="precoPrato">R$ 15,90</h2>
-						<ion-icon name="checkmark-circle"></ion-icon>
-					</div>
-				</div>
-				<div onclick="selecionarPrato(this)" class="prato" data-test="dish">	
-					<img src="./img/frango4.jpg" alt="Frango yin yang">
-					<div>
-						<div>
-							<h1 data-test="item-name" class="nomePrato">Frango do Pedrão</h1>
-							<p>2 sobrecoxas, batata frita e salada</p>
-						</div>
-						<h2 data-test="item-price" class="precoPrato">R$ 16,90</h2>
-						<ion-icon name="checkmark-circle"></ion-icon>
-					</div>
-				</div>
-			</div>
-			<p>Agora, sua bebida</p>
-			<div>
-				<div onclick="selecionarBebida(this)" class="bebida" data-test="drink">	
-					<img src="./img/coca-lata.png" alt="Coca-cola lata" style="object-fit: cover; object-position: center 15%">
-					<div>
-						<div>
-							<h1 data-test="item-name" class="nomeBebida">Coca-cola</h1>
-							<p>lata, 350 ml</p>
-						</div>
-						<h2 data-test="item-price" class="precoBebida">R$ 7,00</h2>
-						<ion-icon name="checkmark-circle"></ion-icon>
-					</div>
-				</div>
-				<div onclick="selecionarBebida(this)" class="bebida" data-test="drink">	
-					<img src="./img/coca-zero.png" alt="Coca-cola sem açúcar" style="object-fit: cover; object-position: center 43%">
-					<div>
-						<div>
-							<h1 data-test="item-name" class="nomeBebida">Coca-cola sem açúcar</h1>
-							<p>lata, 350 ml</p>
-						</div>
-						<h2 data-test="item-price" class="precoBebida">R$ 7,00</h2>
-						<ion-icon name="checkmark-circle"></ion-icon>
-					</div>
-				</div>
-				<div onclick="selecionarBebida(this)" class="bebida" data-test="drink">	
-					<img src="./img/br-pt-coca-cola-original-glass-bottle-250ml-234x700px.png" alt="Coca-cola de garrafa de vidro" style="object-fit: cover; object-position: center 47.3%">
-					<div>
-						<div>
-							<h1 data-test="item-name" class="nomeBebida">Coca-cola</h1>
-							<p>garrafa de vidro,<br> 250 ml</p>
-						</div>
-						<h2 data-test="item-price" class="precoBebida">R$ 6,00</h2>
-						<ion-icon name="checkmark-circle"></ion-icon>
-					</div>
-				</div>
-				<div onclick="selecionarBebida(this)" class="bebida" data-test="drink">	
-					<img src="./img/fanta-laranja.png" alt="Fanta laranja" style="object-fit: cover">
-					<div>
-						<div>
-							<h1 data-test="item-name" class="nomeBebida">Fanta laranja</h1>
-							<p>lata, 350 ml</p>
-						</div>
-						<h2 data-test="item-price" class="precoBebida">R$ 6,00</h2>
-						<ion-icon name="checkmark-circle"></ion-icon>
-					</div>
-				</div>
-				<div onclick="selecionarBebida(this)" class="bebida" data-test="drink">	
-					<img src="./img/fanta-uva.png" alt="Fanta uva" style="object-fit: cover">
-					<div>
-						<div>
-							<h1 data-test="item-name" class="nomeBebida">Fanta uva</h1>
-							<p>lata, 350 ml</p>
-						</div>
-						<h2 data-test="item-price" class="precoBebida">R$ 6,00</h2>
-						<ion-icon name="checkmark-circle"></ion-icon>
-					</div>
-				</div>
-				<div onclick="selecionarBebida(this)" class="bebida" data-test="drink">	
-					<img src="./img/fanta-maracuja.png" alt="Fanta maracujá" style="object-fit: cover">
-					<div>
-						<div>
-							<h1 data-test="item-name" class="nomeBebida">Fanta maracujá</h1>
-							<p>lata, 350 ml</p>
-						</div>
-						<h2 data-test="item-price" class="precoBebida">R$ 6,00</h2>
-						<ion-icon name="checkmark-circle"></ion-icon>
-					</div>
-				</div>
-				<div onclick="selecionarBebida(this)" class="bebida" data-test="drink">	
-					<img src="./img/fanta-misterio.png" alt="Fanta mistério" style="object-fit: cover">
-					<div>
-						<div>
-							<h1 data-test="item-name" class="nomeBebida">Fanta mistério</h1>
-							<p>lata, 350 ml</p>
-						</div>
-						<h2 data-test="item-price" class="precoBebida">R$ 6,00</h2>
-						<ion-icon name="checkmark-circle"></ion-icon>
-					</div>
-				</div>
-				<div onclick="selecionarBebida(this)" class="bebida" data-test="drink">	
-					<img src="./img/kuat.png" alt="Kuat" style="object-fit: cover; object-position: center 35%">
-					<div>
-						<div>
-							<h1 data-test="item-name" class="nomeBebida">Kuat</h1>
-							<p>lata, 350 ml</p>
-						</div>
-						<h2 data-test="item-price" class="precoBebida">R$ 6,00</h2>
-						<ion-icon name="checkmark-circle"></ion-icon>
-					</div>
-				</div>
-				<div onclick="selecionarBebida(this)" class="bebida" data-test="drink">	
-					<img src="./img/sprite.png" alt="Sprite" style="object-fit: cover; object-position: center 37%">
-					<div>
-						<div>
-							<h1 data-test="item-name" class="nomeBebida">Sprite</h1>
-							<p>lata, 350 ml</p>
-						</div>
-						<h2 data-test="item-price" class="precoBebida">R$ 6,00</h2>
-						<ion-icon name="checkmark-circle"></ion-icon>
-					</div>
-				</div>
-				<div onclick="selecionarBebida(this)" class="bebida" data-test="drink">	
-					<img src="./img/schweppes.png" alt="Schweppes" style="object-fit: cover; object-position: center 44%">
-					<div>
-						<div>
-							<h1 data-test="item-name" class="nomeBebida">Schweppes</h1>
-							<p>lata, 350 ml</p>
-						</div>
-						<h2 data-test="item-price" class="precoBebida">R$ 6,50</h2>
-						<ion-icon name="checkmark-circle"></ion-icon>
-					</div>
-				</div>
-				<div onclick="selecionarBebida(this)" class="bebida" data-test="drink">	
-					<img src="./img/agua.png" alt="Água mineral" style="object-fit: cover; object-position: center 41%">
-					<div>
-						<div>
-							<h1 data-test="item-name" class="nomeBebida">Água sem gás</h1>
-							<p>garrafa, 500 ml</p>
-						</div>
-						<h2 data-test="item-price" class="precoBebida">R$ 4,00</h2>
-						<ion-icon name="checkmark-circle"></ion-icon>
-					</div>
-				</div>
-				<div onclick="selecionarBebida(this)" class="bebida" data-test="drink">	
-					<img src="./img/agua-com-gas.png" alt="Água mineral com gás" style="object-fit: cover; object-position: center 41%">
-					<div>
-						<div>
-							<h1 data-test="item-name" class="nomeBebida">Água com gás</h1>
-							<p>garrafa, 500 ml</p>
-						</div>
-						<h2 data-test="item-price" class="precoBebida">R$ 4,00</h2>
-						<ion-icon name="checkmark-circle"></ion-icon>
-					</div>
-				</div>
-			</div>
-			<p>Por fim, sua sobremesa</p>
-			<div>
-				<div onclick="selecionarSobremesa(this)" class="sobremesa" data-test="dessert">
-					<img src="./img/pudim.png" height="87" alt="Pudim" style="object-fit: cover; object-position: center 0%">
-					<div>
-						<div>
-							<h1 data-test="item-name" class="nomeSobremesa">Pudim</h1>
-							<p>tradicional</p>
-						</div>
-						<h2 data-test="item-price" class="precoSobremesa">R$ 7,00</h2>
-						<ion-icon name="checkmark-circle"></ion-icon>
-					</div>
-				</div>
-				<div onclick="selecionarSobremesa(this)" class="sobremesa" data-test="dessert">	
-					<img src="./img/surpresa.jpg" alt="Surpresa na taça" style="object-fit: cover; object-position: center 30%">
-					<div>
-						<div>
-							<h1 data-test="item-name" class="nomeSobremesa">Surpresa na taça</h1>
-							<p>bolo, morangos e creme de leite ninho</p>
-						</div>
-						<h2 data-test="item-price" class="precoSobremesa">R$ 25,00</h2>
-						<ion-icon name="checkmark-circle"></ion-icon>
-					</div>
-				</div>
-				<div onclick="selecionarSobremesa(this)" class="sobremesa" data-test="dessert">	
-					<img src="./img/brownie.jpg" height="87" alt="Brownie" style="object-fit: cover; object-position: center 80%">
-					<div>
-						<div>
-							<h1 data-test="item-name" class="nomeSobremesa">Brownie</h1>
-							<p>4 pedaços</p>
-						</div>
-						<h2 data-test="item-price" class="precoSobremesa">R$ 12,00</h2>
-						<ion-icon name="checkmark-circle"></ion-icon>
-					</div>
-				</div>
-				<div onclick="selecionarSobremesa(this)" class="sobremesa" data-test="dessert">	
-					<img src="./img/torta-de-limao.jpg" height="87" alt="Pavê" style="object-fit: cover; object-position: center 36%">
-					<div>
-						<div>
-							<h1 data-test="item-name" class="nomeSobremesa">Torta de limão</h1>
-							<p>fatia</p>
-						</div>
-						<h2 data-test="item-price" class="precoSobremesa">R$ 10,00</h2>
-						<ion-icon name="checkmark-circle"></ion-icon>
-					</div>
-				</div>
-				<div onclick="selecionarSobremesa(this)" class="sobremesa" data-test="dessert">	
-					<img src="./img/pave.webp" height="87" alt="Pavê" style="object-fit: cover; object-position: center 36%">
-					<div>
-						<div>
-							<h1 data-test="item-name" class="nomeSobremesa">Pavê</h1>
-							<p>taça</p>
-						</div>
-						<h2 data-test="item-price" class="precoSobremesa">R$ 16,00</h2>
-						<ion-icon name="checkmark-circle"></ion-icon>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-	</main>
-	<footer>
-		<button onclick="finalizarPedido()" disabled data-test="order-btn" class="botao-confirmar-pedido">
-			Selecione os 3 itens <br>para fechar o pedido
-		</button>
-	</footer>
-	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-	<script src="./script/script.js"></script>
+    <div class="background">
+        <div data-test="confirm-order-modal" class="resumo-pedido">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2" scope="row">Confirme seu pedido</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="confirmaPrato">The table body</td>
+                        <td class="confirmaPrecoPrato">with two columns</td>
+                    </tr>
+                    <tr>
+                        <td class="confirmaBebida">The table body</td>
+                        <td class="confirmaPrecoBebida">with two columns</td>
+                    </tr>
+                    <tr>
+                        <td class="confirmaSobremesa">The table body</td>
+                        <td class="confirmaPrecoSobremesa">with two columns</td>
+                    </tr>
+                    <tr>
+                        <td class="confirmaTotal">TOTAL</td>
+                        <td  class="confirmaPrecoTotal">sla</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button data-test="confirm-order-btn" onclick="enviarPedido()">
+                Tudo certo, pode pedir!
+            </button>
+            <button data-test="cancel-order-btn" onclick="cancelarPedido()">
+                Cancelar
+            </button>
+        </div>
+    </div>
+    <header>
+        <h1>Driven Eats</h1>
+        <p>Sua comida em 6 minutos</p>
+    </header>
+    <main>
+        <div>
+            <p>Primeiro, seu prato</p>
+            <div class="prato-principal">
+                <div onclick="selecionarPrato(this)" class="prato" data-test="dish">	
+                    <img src="./img/frango3.jpg" alt="Frango da bila">
+                    <div>
+                        <div>
+                            <h1 data-test="item-name" class="nomePrato">Frango da Bila</h1>
+                            <p>1 coxa, 1 sobrecoxa, batata crinkle, salada </p>
+                        </div>
+                        <h2 data-test="item-price" class="precoPrato">R$ 17,90</h2>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+                <div onclick="selecionarPrato(this)" class="prato" data-test="dish">	
+                    <img src="./img/frango1.jpg" alt="Frango" style="object-fit: cover; object-position: center 83%;">
+                    <div>
+                        <div>
+                            <h1 data-test="item-name" class="nomePrato">Frango do Mr. Pink</h1>
+                            <p>2 coxas, batata frita, salada</p>
+                        </div>
+                        <h2 data-test="item-price" class="precoPrato">R$ 14,90</h2>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+                <div onclick="selecionarPrato(this)" class="prato" data-test="dish">	
+                    <img src="./img/frango2.jpg" alt="Frango yin yang">
+                    <div>
+                        <div>
+                            <h1 data-test="item-name" class="nomePrato">Frango do Dudu</h1>
+                            <p>3 coxinhas da asa, batata frita, salada</p>
+                        </div>
+                        <h2 data-test="item-price" class="precoPrato">R$ 15,90</h2>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+                <div onclick="selecionarPrato(this)" class="prato" data-test="dish">	
+                    <img src="./img/frango4.jpg" alt="Frango yin yang">
+                    <div>
+                        <div>
+                            <h1 data-test="item-name" class="nomePrato">Frango do Pedrão</h1>
+                            <p>2 sobrecoxas, batata frita e salada</p>
+                        </div>
+                        <h2 data-test="item-price" class="precoPrato">R$ 16,90</h2>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <p>Agora, sua bebida</p>
+            <div>
+                <div onclick="selecionarBebida(this)" class="bebida" data-test="drink">	
+                    <img src="./img/coca-lata.png" alt="Coca-cola lata" style="object-fit: cover; object-position: center 15%">
+                    <div>
+                        <div>
+                            <h1 data-test="item-name" class="nomeBebida">Coca-cola</h1>
+                            <p>lata, 350 ml</p>
+                        </div>
+                        <h2 data-test="item-price" class="precoBebida">R$ 7,00</h2>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+                <div onclick="selecionarBebida(this)" class="bebida" data-test="drink">	
+                    <img src="./img/coca-zero.png" alt="Coca-cola sem açúcar" style="object-fit: cover; object-position: center 43%">
+                    <div>
+                        <div>
+                            <h1 data-test="item-name" class="nomeBebida">Coca-cola sem açúcar</h1>
+                            <p>lata, 350 ml</p>
+                        </div>
+                        <h2 data-test="item-price" class="precoBebida">R$ 7,00</h2>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+                <div onclick="selecionarBebida(this)" class="bebida" data-test="drink">	
+                    <img src="./img/br-pt-coca-cola-original-glass-bottle-250ml-234x700px.png" alt="Coca-cola de garrafa de vidro" style="object-fit: cover; object-position: center 47.3%">
+                    <div>
+                        <div>
+                            <h1 data-test="item-name" class="nomeBebida">Coca-cola</h1>
+                            <p>garrafa de vidro,<br> 250 ml</p>
+                        </div>
+                        <h2 data-test="item-price" class="precoBebida">R$ 6,00</h2>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+                <div onclick="selecionarBebida(this)" class="bebida" data-test="drink">	
+                    <img src="./img/fanta-laranja.png" alt="Fanta laranja" style="object-fit: cover">
+                    <div>
+                        <div>
+                            <h1 data-test="item-name" class="nomeBebida">Fanta laranja</h1>
+                            <p>lata, 350 ml</p>
+                        </div>
+                        <h2 data-test="item-price" class="precoBebida">R$ 6,00</h2>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+                <div onclick="selecionarBebida(this)" class="bebida" data-test="drink">	
+                    <img src="./img/fanta-uva.png" alt="Fanta uva" style="object-fit: cover">
+                    <div>
+                        <div>
+                            <h1 data-test="item-name" class="nomeBebida">Fanta uva</h1>
+                            <p>lata, 350 ml</p>
+                        </div>
+                        <h2 data-test="item-price" class="precoBebida">R$ 6,00</h2>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+                <div onclick="selecionarBebida(this)" class="bebida" data-test="drink">	
+                    <img src="./img/fanta-maracuja.png" alt="Fanta maracujá" style="object-fit: cover">
+                    <div>
+                        <div>
+                            <h1 data-test="item-name" class="nomeBebida">Fanta maracujá</h1>
+                            <p>lata, 350 ml</p>
+                        </div>
+                        <h2 data-test="item-price" class="precoBebida">R$ 6,00</h2>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+                <div onclick="selecionarBebida(this)" class="bebida" data-test="drink">	
+                    <img src="./img/fanta-misterio.png" alt="Fanta mistério" style="object-fit: cover">
+                    <div>
+                        <div>
+                            <h1 data-test="item-name" class="nomeBebida">Fanta mistério</h1>
+                            <p>lata, 350 ml</p>
+                        </div>
+                        <h2 data-test="item-price" class="precoBebida">R$ 6,00</h2>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+                <div onclick="selecionarBebida(this)" class="bebida" data-test="drink">	
+                    <img src="./img/kuat.png" alt="Kuat" style="object-fit: cover; object-position: center 35%">
+                    <div>
+                        <div>
+                            <h1 data-test="item-name" class="nomeBebida">Kuat</h1>
+                            <p>lata, 350 ml</p>
+                        </div>
+                        <h2 data-test="item-price" class="precoBebida">R$ 6,00</h2>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+                <div onclick="selecionarBebida(this)" class="bebida" data-test="drink">	
+                    <img src="./img/sprite.png" alt="Sprite" style="object-fit: cover; object-position: center 37%">
+                    <div>
+                        <div>
+                            <h1 data-test="item-name" class="nomeBebida">Sprite</h1>
+                            <p>lata, 350 ml</p>
+                        </div>
+                        <h2 data-test="item-price" class="precoBebida">R$ 6,00</h2>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+                <div onclick="selecionarBebida(this)" class="bebida" data-test="drink">	
+                    <img src="./img/schweppes.png" alt="Schweppes" style="object-fit: cover; object-position: center 44%">
+                    <div>
+                        <div>
+                            <h1 data-test="item-name" class="nomeBebida">Schweppes</h1>
+                            <p>lata, 350 ml</p>
+                        </div>
+                        <h2 data-test="item-price" class="precoBebida">R$ 6,50</h2>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+                <div onclick="selecionarBebida(this)" class="bebida" data-test="drink">	
+                    <img src="./img/agua.png" alt="Água mineral" style="object-fit: cover; object-position: center 41%">
+                    <div>
+                        <div>
+                            <h1 data-test="item-name" class="nomeBebida">Água sem gás</h1>
+                            <p>garrafa, 500 ml</p>
+                        </div>
+                        <h2 data-test="item-price" class="precoBebida">R$ 4,00</h2>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+                <div onclick="selecionarBebida(this)" class="bebida" data-test="drink">	
+                    <img src="./img/agua-com-gas.png" alt="Água mineral com gás" style="object-fit: cover; object-position: center 41%">
+                    <div>
+                        <div>
+                            <h1 data-test="item-name" class="nomeBebida">Água com gás</h1>
+                            <p>garrafa, 500 ml</p>
+                        </div>
+                        <h2 data-test="item-price" class="precoBebida">R$ 4,00</h2>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <p>Por fim, sua sobremesa</p>
+            <div>
+                <div onclick="selecionarSobremesa(this)" class="sobremesa" data-test="dessert">
+                    <img src="./img/pudim.png" height="87" alt="Pudim" style="object-fit: cover; object-position: center 0%">
+                    <div>
+                        <div>
+                            <h1 data-test="item-name" class="nomeSobremesa">Pudim</h1>
+                            <p>tradicional</p>
+                        </div>
+                        <h2 data-test="item-price" class="precoSobremesa">R$ 7,00</h2>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+                <div onclick="selecionarSobremesa(this)" class="sobremesa" data-test="dessert">	
+                    <img src="./img/surpresa.jpg" alt="Surpresa na taça" style="object-fit: cover; object-position: center 30%">
+                    <div>
+                        <div>
+                            <h1 data-test="item-name" class="nomeSobremesa">Surpresa na taça</h1>
+                            <p>bolo, morangos e creme de leite ninho</p>
+                        </div>
+                        <h2 data-test="item-price" class="precoSobremesa">R$ 25,00</h2>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+                <div onclick="selecionarSobremesa(this)" class="sobremesa" data-test="dessert">	
+                    <img src="./img/brownie.jpg" height="87" alt="Brownie" style="object-fit: cover; object-position: center 80%">
+                    <div>
+                        <div>
+                            <h1 data-test="item-name" class="nomeSobremesa">Brownie</h1>
+                            <p>4 pedaços</p>
+                        </div>
+                        <h2 data-test="item-price" class="precoSobremesa">R$ 12,00</h2>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+                <div onclick="selecionarSobremesa(this)" class="sobremesa" data-test="dessert">	
+                    <img src="./img/torta-de-limao.jpg" height="87" alt="Pavê" style="object-fit: cover; object-position: center 36%">
+                    <div>
+                        <div>
+                            <h1 data-test="item-name" class="nomeSobremesa">Torta de limão</h1>
+                            <p>fatia</p>
+                        </div>
+                        <h2 data-test="item-price" class="precoSobremesa">R$ 10,00</h2>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+                <div onclick="selecionarSobremesa(this)" class="sobremesa" data-test="dessert">	
+                    <img src="./img/pave.webp" height="87" alt="Pavê" style="object-fit: cover; object-position: center 36%">
+                    <div>
+                        <div>
+                            <h1 data-test="item-name" class="nomeSobremesa">Pavê</h1>
+                            <p>taça</p>
+                        </div>
+                        <h2 data-test="item-price" class="precoSobremesa">R$ 16,00</h2>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <button onclick="finalizarPedido()" disabled data-test="order-btn" class="botao-confirmar-pedido">
+            Selecione os 3 itens <br>para fechar o pedido
+        </button>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./script/script.js"></script>
 </body>
 </html>
