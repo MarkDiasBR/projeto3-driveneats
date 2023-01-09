@@ -87,8 +87,6 @@ function selecionarSobremesa(containerClicado) {
 	verificarPedido()
 }
 
-let = preco
-
 function verificarPedido() {
 	if (pratoPedido !== undefined && bebidaPedido !== undefined && sobremesaPedido !== undefined) {
 		document.querySelector(".botao-confirmar-pedido").disabled = false;
@@ -124,18 +122,22 @@ function cancelarPedido() {
 	document.body.classList.remove("fechar-pedido");
 }
 
+let precoFinal;
+
 function enviarPedido() {
 	let nomeCliente = prompt("Qual o seu nome?");
 	let enderecoCliente = prompt("Qual o endereço de entrega?");
+
+	precoFinal = document.querySelector(".confirmaPrecoTotal").innerHTML;
 	
 	let textoWhatsApp = `Olá, gostaria de fazer o pedido:
 	- Prato: ${pratoPedido}
 	- Bebida: ${bebidaPedido}
 	- Sobremesa: ${sobremesaPedido}
-	Total: ${precoTotal}
+	Total: ${precoFinal}
 
 
 	Nome: ${nomeCliente}
-	Endereço: ${enderecoCliente}`
-	window.open("https://wa.me/5571996597302?text=" + encodeURIComponent(textoWhatsApp), "_blank");
+	Endereço: ${enderecoCliente}`;
+	window.open("https://wa.me/5571996597302?text=" + encodeURIComponent(textoWhatsApp));
 }
