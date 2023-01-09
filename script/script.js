@@ -13,134 +13,137 @@ let pratoPedido;
 let precoPratoPedido;
 
 function selecionarPrato(containerClicado) {
-	let seletor = ".prato";
+    const seletor = ".prato";
 
-	if (pratoPedido === undefined && precoPratoPedido === undefined) {
-		containerClicado.classList.add("selected");
-		pratoPedido = document.querySelector(".prato.selected .nomePrato").innerHTML;
-		precoPratoPedido = document.querySelector(".prato.selected .precoPrato").innerHTML;
-	} else {
-		if (containerClicado.classList.contains("selected")) {
-			containerClicado.classList.remove("selected");
-			pratoPedido = undefined;
-			precoPratoPedido = undefined;
-		} else {
-			desmarcaBotaoAnterior(seletor);
-			containerClicado.classList.add("selected");
-			pratoPedido = document.querySelector(".prato.selected .nomePrato").innerHTML;
-			precoPratoPedido = document.querySelector(".prato.selected .precoPrato").innerHTML;
-		}
-	}
+    if (pratoPedido === undefined && precoPratoPedido === undefined) {
+        containerClicado.classList.add("selected");
+        pratoPedido = document.querySelector(".prato.selected .nomePrato").innerHTML;
+        precoPratoPedido = document.querySelector(".prato.selected .precoPrato").innerHTML;
+    } else {
+        if (containerClicado.classList.contains("selected")) {
+            containerClicado.classList.remove("selected");
+            pratoPedido = undefined;
+            precoPratoPedido = undefined;
+        } else {
+            desmarcaBotaoAnterior(seletor);
+            containerClicado.classList.add("selected");
+            pratoPedido = document.querySelector(".prato.selected .nomePrato").innerHTML;
+            precoPratoPedido = document.querySelector(".prato.selected .precoPrato").innerHTML;
+        }
+    }
 
-	verificarPedido();
+    verificarPedido();
 }
 
 let bebidaPedido;
 let precoBebidaPedido;
 
 function selecionarBebida(containerClicado) {
-	let seletor = ".bebida";
+    const seletor = ".bebida";
 
-	if (bebidaPedido === undefined && precoBebidaPedido === undefined) {
-		containerClicado.classList.add("selected");
-		bebidaPedido = document.querySelector(".bebida.selected .nomeBebida").innerHTML;
-		precoBebidaPedido = document.querySelector(".bebida.selected .precoBebida").innerHTML;
-	} else {
-		if (containerClicado.classList.contains("selected")) {
-			containerClicado.classList.remove("selected");
-			bebidaPedido = undefined;
-			precoBebidaPedido = undefined;
-		} else {
-			desmarcaBotaoAnterior(seletor);
-			containerClicado.classList.add("selected");
-			bebidaPedido = document.querySelector(".bebida.selected .nomeBebida").innerHTML;
-			precoBebidaPedido = document.querySelector(".bebida.selected .precoBebida").innerHTML;
-		}
-	}
+    if (bebidaPedido === undefined && precoBebidaPedido === undefined) {
+        containerClicado.classList.add("selected");
+        bebidaPedido = document.querySelector(".bebida.selected .nomeBebida").innerHTML;
+        precoBebidaPedido = document.querySelector(".bebida.selected .precoBebida").innerHTML;
+    } else {
+        if (containerClicado.classList.contains("selected")) {
+            containerClicado.classList.remove("selected");
+            bebidaPedido = undefined;
+            precoBebidaPedido = undefined;
+        } else {
+            desmarcaBotaoAnterior(seletor);
+            containerClicado.classList.add("selected");
+            bebidaPedido = document.querySelector(".bebida.selected .nomeBebida").innerHTML;
+            precoBebidaPedido = document.querySelector(".bebida.selected .precoBebida").innerHTML;
+        }
+    }
 
-	verificarPedido();
+    verificarPedido();
 }
 
 let sobremesaPedido;
 let precoSobremesaPedido;
 
 function selecionarSobremesa(containerClicado) {
-	let seletor = ".sobremesa";
+    const seletor = ".sobremesa";
 
-	if (sobremesaPedido === undefined && precoSobremesaPedido === undefined) {
-		containerClicado.classList.add("selected");
-		sobremesaPedido = document.querySelector(".sobremesa.selected .nomeSobremesa").innerHTML;
-		precoSobremesaPedido = document.querySelector(".sobremesa.selected .precoSobremesa").innerHTML;
-	} else {
-		if (containerClicado.classList.contains("selected")) {
-			containerClicado.classList.remove("selected");
-			sobremesaPedido = undefined;
-			precoSobremesaPedido = undefined;
-		} else {
-			desmarcaBotaoAnterior(seletor);
-			containerClicado.classList.add("selected");
-			sobremesaPedido = document.querySelector(".sobremesa.selected .nomeSobremesa").innerHTML;
-			precoSobremesaPedido = document.querySelector(".sobremesa.selected .precoSobremesa").innerHTML;
-		}
-	}
-	
-	verificarPedido();
+    if (sobremesaPedido === undefined && precoSobremesaPedido === undefined) {
+        containerClicado.classList.add("selected");
+        sobremesaPedido = document.querySelector(".sobremesa.selected .nomeSobremesa").innerHTML;
+        precoSobremesaPedido = document.querySelector(".sobremesa.selected .precoSobremesa").innerHTML;
+    } else {
+        if (containerClicado.classList.contains("selected")) {
+            containerClicado.classList.remove("selected");
+            sobremesaPedido = undefined;
+            precoSobremesaPedido = undefined;
+        } else {
+            desmarcaBotaoAnterior(seletor);
+            containerClicado.classList.add("selected");
+            sobremesaPedido = document.querySelector(".sobremesa.selected .nomeSobremesa").innerHTML;
+            precoSobremesaPedido = document.querySelector(".sobremesa.selected .precoSobremesa").innerHTML;
+        }
+    }
+
+    verificarPedido();
 }
 
 function verificarPedido() {
-	if (pratoPedido !== undefined && bebidaPedido !== undefined && sobremesaPedido !== undefined) {
-		document.querySelector(".botao-confirmar-pedido").disabled = false;
-		document.querySelector(".botao-confirmar-pedido").innerHTML = "Fechar pedido";
-	} else {
-		document.querySelector(".botao-confirmar-pedido").disabled = true;
-		document.querySelector(".botao-confirmar-pedido").innerHTML = "Selecione os 3 itens <br>para fechar o pedido";
-	}
+    const classeBotao = ".botao-confirmar-pedido";
+    if (pratoPedido !== undefined && bebidaPedido !== undefined && sobremesaPedido !== undefined) {
+        document.querySelector(classeBotao).disabled = false;
+        document.querySelector(classeBotao).innerHTML = "Fechar pedido";
+    } else {
+        document.querySelector(classeBotao).disabled = true;
+        document.querySelector(classeBotao).innerHTML = "Selecione os 3 itens <br>para fechar o pedido";
+    }
 }
 
+const classeBotaoFechar = "fechar-pedido";
+
 function finalizarPedido() {
-	document.querySelector(".confirmaPrato").innerHTML = pratoPedido;
-	document.querySelector(".confirmaPrecoPrato").innerHTML = precoPratoPedido;
+    document.querySelector(".confirmaPrato").innerHTML = pratoPedido;
+    document.querySelector(".confirmaPrecoPrato").innerHTML = precoPratoPedido;
 
-	document.querySelector(".confirmaBebida").innerHTML = bebidaPedido;
-	document.querySelector(".confirmaPrecoBebida").innerHTML = precoBebidaPedido;
-	
-	document.querySelector(".confirmaSobremesa").innerHTML = sobremesaPedido;
-	document.querySelector(".confirmaPrecoSobremesa").innerHTML = precoSobremesaPedido;
+    document.querySelector(".confirmaBebida").innerHTML = bebidaPedido;
+    document.querySelector(".confirmaPrecoBebida").innerHTML = precoBebidaPedido;
 
-	let precoTotal = Number(precoPratoPedido.replace("R$ ", "").replace(",","."));
-	
-	precoTotal += Number(precoBebidaPedido.replace("R$ ", "").replace(",",".")) + Number(precoSobremesaPedido.replace("R$ ", "").replace(",","."));
+    document.querySelector(".confirmaSobremesa").innerHTML = sobremesaPedido;
+    document.querySelector(".confirmaPrecoSobremesa").innerHTML = precoSobremesaPedido;
 
-	let quantidadeDecimais = 2;
-	precoTotal = "R$ "+ precoTotal.toFixed(quantidadeDecimais).replace(".", ",");
+    let precoTotal = Number(precoPratoPedido.replace("R$ ", "").replace(",","."));
 
-	document.querySelector(".confirmaPrecoTotal").innerHTML = precoTotal;
+    precoTotal += Number(precoBebidaPedido.replace("R$ ", "").replace(",",".")) + Number(precoSobremesaPedido.replace("R$ ", "").replace(",","."));
 
-	document.querySelector(".background").classList.add("fechar-pedido");
-	document.body.classList.add("fechar-pedido");
+    const quantidadeDecimais = 2;
+    precoTotal = "R$ "+ precoTotal.toFixed(quantidadeDecimais).replace(".", ",");
+
+    document.querySelector(".confirmaPrecoTotal").innerHTML = precoTotal;
+
+    document.querySelector(".background").classList.add(classeBotaoFechar);
+    document.body.classList.add(classeBotaoFechar);
 }
 
 function cancelarPedido() {
-	document.querySelector(".background").classList.remove("fechar-pedido");
-	document.body.classList.remove("fechar-pedido");
+    document.querySelector(".background").classList.remove(classeBotaoFechar);
+    document.body.classList.remove(classeBotaoFechar);
 }
 
 let precoFinal;
 
 function enviarPedido() {
-	let nomeCliente = prompt("Qual o seu nome?");
-	let enderecoCliente = prompt("Qual o endereço de entrega?");
+    const nomeCliente = prompt("Qual o seu nome?");
+    const enderecoCliente = prompt("Qual o endereço de entrega?");
 
-	precoFinal = document.querySelector(".confirmaPrecoTotal").innerHTML;
-	
-	let textoWhatsApp = `Olá, gostaria de fazer o pedido:
-	- Prato: ${pratoPedido}
-	- Bebida: ${bebidaPedido}
-	- Sobremesa: ${sobremesaPedido}
-	Total: ${precoFinal}
+    precoFinal = document.querySelector(".confirmaPrecoTotal").innerHTML;
+
+    const textoWhatsApp = `Olá, gostaria de fazer o pedido:
+    - Prato: ${pratoPedido}
+    - Bebida: ${bebidaPedido}
+    - Sobremesa: ${sobremesaPedido}
+    Total: ${precoFinal}
 
 
-	Nome: ${nomeCliente}
-	Endereço: ${enderecoCliente}`;
-	window.open("https://wa.me/5571996597302?text=" + encodeURIComponent(textoWhatsApp));
+    Nome: ${nomeCliente}
+    Endereço: ${enderecoCliente}`;
+    window.open("https://wa.me/5571996597302?text=" + encodeURIComponent(textoWhatsApp));
 }
