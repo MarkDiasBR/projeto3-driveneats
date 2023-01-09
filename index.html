@@ -7,7 +7,8 @@
     <title>Driven Eats</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
@@ -16,6 +17,7 @@
     <div class="background">
         <div data-test="confirm-order-modal" class="resumo-pedido">
             <table>
+                <caption>tabela de valores</caption>
                 <thead>
                     <tr>
                         <th colspan="2" scope="row">Confirme seu pedido</th>
@@ -68,7 +70,7 @@
                     </div>
                 </div>
                 <div onclick="selecionarPrato(this)" class="prato" data-test="dish">	
-                    <img src="./img/frango1.jpg" alt="Frango" style="object-fit: cover; object-position: center 83%;">
+                    <img class="img-ajuste1" src="./img/frango1.jpg" alt="Frango">
                     <div>
                         <div>
                             <h1 data-test="item-name" class="nomePrato">Frango do Mr. Pink</h1>
@@ -104,7 +106,7 @@
             <p>Agora, sua bebida</p>
             <div>
                 <div onclick="selecionarBebida(this)" class="bebida" data-test="drink">	
-                    <img src="./img/coca-lata.png" alt="Coca-cola lata" style="object-fit: cover; object-position: center 15%">
+                    <img class="img-ajuste2" src="./img/coca-lata.png" alt="Coca-cola lata">
                     <div>
                         <div>
                             <h1 data-test="item-name" class="nomeBebida">Coca-cola</h1>
@@ -115,7 +117,7 @@
                     </div>
                 </div>
                 <div onclick="selecionarBebida(this)" class="bebida" data-test="drink">	
-                    <img src="./img/coca-zero.png" alt="Coca-cola sem açúcar" style="object-fit: cover; object-position: center 43%">
+                    <img class="img-ajuste3" src="./img/coca-zero.png" alt="Coca-cola sem açúcar">
                     <div>
                         <div>
                             <h1 data-test="item-name" class="nomeBebida">Coca-cola sem açúcar</h1>
@@ -126,7 +128,7 @@
                     </div>
                 </div>
                 <div onclick="selecionarBebida(this)" class="bebida" data-test="drink">	
-                    <img src="./img/br-pt-coca-cola-original-glass-bottle-250ml-234x700px.png" alt="Coca-cola de garrafa de vidro" style="object-fit: cover; object-position: center 47.3%">
+                    <img class="img-ajuste4" src="./img/br-pt-coca-cola-original-glass-bottle-250ml-234x700px.png" alt="Coca-cola de garrafa de vidro">
                     <div>
                         <div>
                             <h1 data-test="item-name" class="nomeBebida">Coca-cola</h1>
@@ -137,7 +139,7 @@
                     </div>
                 </div>
                 <div onclick="selecionarBebida(this)" class="bebida" data-test="drink">	
-                    <img src="./img/fanta-laranja.png" alt="Fanta laranja" style="object-fit: cover">
+                    <img class="img-ajuste5" src="./img/fanta-laranja.png" alt="Fanta laranja">
                     <div>
                         <div>
                             <h1 data-test="item-name" class="nomeBebida">Fanta laranja</h1>
@@ -148,7 +150,7 @@
                     </div>
                 </div>
                 <div onclick="selecionarBebida(this)" class="bebida" data-test="drink">	
-                    <img src="./img/fanta-uva.png" alt="Fanta uva" style="object-fit: cover">
+                    <img class="img-ajuste5" src="./img/fanta-uva.png" alt="Fanta uva">
                     <div>
                         <div>
                             <h1 data-test="item-name" class="nomeBebida">Fanta uva</h1>
@@ -159,7 +161,7 @@
                     </div>
                 </div>
                 <div onclick="selecionarBebida(this)" class="bebida" data-test="drink">	
-                    <img src="./img/fanta-maracuja.png" alt="Fanta maracujá" style="object-fit: cover">
+                    <img class="img-ajuste5" src="./img/fanta-maracuja.png" alt="Fanta maracujá">
                     <div>
                         <div>
                             <h1 data-test="item-name" class="nomeBebida">Fanta maracujá</h1>
@@ -170,7 +172,7 @@
                     </div>
                 </div>
                 <div onclick="selecionarBebida(this)" class="bebida" data-test="drink">	
-                    <img src="./img/fanta-misterio.png" alt="Fanta mistério" style="object-fit: cover">
+                    <img class="img-ajuste5" src="./img/fanta-misterio.png" alt="Fanta mistério">
                     <div>
                         <div>
                             <h1 data-test="item-name" class="nomeBebida">Fanta mistério</h1>
@@ -181,7 +183,7 @@
                     </div>
                 </div>
                 <div onclick="selecionarBebida(this)" class="bebida" data-test="drink">	
-                    <img src="./img/kuat.png" alt="Kuat" style="object-fit: cover; object-position: center 35%">
+                    <img class="img-ajuste6" src="./img/kuat.png" alt="Kuat">
                     <div>
                         <div>
                             <h1 data-test="item-name" class="nomeBebida">Kuat</h1>
@@ -192,7 +194,7 @@
                     </div>
                 </div>
                 <div onclick="selecionarBebida(this)" class="bebida" data-test="drink">	
-                    <img src="./img/sprite.png" alt="Sprite" style="object-fit: cover; object-position: center 37%">
+                    <img class="img-ajuste7" src="./img/sprite.png" alt="Sprite">
                     <div>
                         <div>
                             <h1 data-test="item-name" class="nomeBebida">Sprite</h1>
@@ -203,7 +205,7 @@
                     </div>
                 </div>
                 <div onclick="selecionarBebida(this)" class="bebida" data-test="drink">	
-                    <img src="./img/schweppes.png" alt="Schweppes" style="object-fit: cover; object-position: center 44%">
+                    <img class="img-ajuste8" src="./img/schweppes.png" alt="Schweppes">
                     <div>
                         <div>
                             <h1 data-test="item-name" class="nomeBebida">Schweppes</h1>
@@ -214,7 +216,7 @@
                     </div>
                 </div>
                 <div onclick="selecionarBebida(this)" class="bebida" data-test="drink">	
-                    <img src="./img/agua.png" alt="Água mineral" style="object-fit: cover; object-position: center 41%">
+                    <img class="img-ajuste9" src="./img/agua.png" alt="Água mineral">
                     <div>
                         <div>
                             <h1 data-test="item-name" class="nomeBebida">Água sem gás</h1>
@@ -225,7 +227,7 @@
                     </div>
                 </div>
                 <div onclick="selecionarBebida(this)" class="bebida" data-test="drink">	
-                    <img src="./img/agua-com-gas.png" alt="Água mineral com gás" style="object-fit: cover; object-position: center 41%">
+                    <img class="img-ajuste9" src="./img/agua-com-gas.png" alt="Água mineral com gás">
                     <div>
                         <div>
                             <h1 data-test="item-name" class="nomeBebida">Água com gás</h1>
@@ -239,7 +241,7 @@
             <p>Por fim, sua sobremesa</p>
             <div>
                 <div onclick="selecionarSobremesa(this)" class="sobremesa" data-test="dessert">
-                    <img src="./img/pudim.png" height="87" alt="Pudim" style="object-fit: cover; object-position: center 0%">
+                    <img class="img-ajuste10" src="./img/pudim.png" height="87" alt="Pudim">
                     <div>
                         <div>
                             <h1 data-test="item-name" class="nomeSobremesa">Pudim</h1>
@@ -250,7 +252,7 @@
                     </div>
                 </div>
                 <div onclick="selecionarSobremesa(this)" class="sobremesa" data-test="dessert">	
-                    <img src="./img/surpresa.jpg" alt="Surpresa na taça" style="object-fit: cover; object-position: center 30%">
+                    <img class="img-ajuste11" src="./img/surpresa.jpg" alt="Surpresa na taça">
                     <div>
                         <div>
                             <h1 data-test="item-name" class="nomeSobremesa">Surpresa na taça</h1>
@@ -261,7 +263,7 @@
                     </div>
                 </div>
                 <div onclick="selecionarSobremesa(this)" class="sobremesa" data-test="dessert">	
-                    <img src="./img/brownie.jpg" height="87" alt="Brownie" style="object-fit: cover; object-position: center 80%">
+                    <img class="img-ajuste12" src="./img/brownie.jpg" height="87" alt="Brownie">
                     <div>
                         <div>
                             <h1 data-test="item-name" class="nomeSobremesa">Brownie</h1>
@@ -272,7 +274,7 @@
                     </div>
                 </div>
                 <div onclick="selecionarSobremesa(this)" class="sobremesa" data-test="dessert">	
-                    <img src="./img/torta-de-limao.jpg" height="87" alt="Pavê" style="object-fit: cover; object-position: center 36%">
+                    <img class="img-ajuste13" src="./img/torta-de-limao.jpg" height="87" alt="Pavê">
                     <div>
                         <div>
                             <h1 data-test="item-name" class="nomeSobremesa">Torta de limão</h1>
@@ -283,7 +285,7 @@
                     </div>
                 </div>
                 <div onclick="selecionarSobremesa(this)" class="sobremesa" data-test="dessert">	
-                    <img src="./img/pave.webp" height="87" alt="Pavê" style="object-fit: cover; object-position: center 36%">
+                    <img class="img-ajuste13" src="./img/pave.webp" height="87" alt="Pavê">
                     <div>
                         <div>
                             <h1 data-test="item-name" class="nomeSobremesa">Pavê</h1>
