@@ -32,7 +32,7 @@ function selecionarPrato(containerClicado) {
 		}
 	}
 
-	verificarPedido()
+	verificarPedido();
 }
 
 let bebidaPedido;
@@ -57,8 +57,8 @@ function selecionarBebida(containerClicado) {
 			precoBebidaPedido = document.querySelector(".bebida.selected .precoBebida").innerHTML;
 		}
 	}
-	
-	verificarPedido()
+
+	verificarPedido();
 }
 
 let sobremesaPedido;
@@ -84,7 +84,7 @@ function selecionarSobremesa(containerClicado) {
 		}
 	}
 	
-	verificarPedido()
+	verificarPedido();
 }
 
 function verificarPedido() {
@@ -107,9 +107,12 @@ function finalizarPedido() {
 	document.querySelector(".confirmaSobremesa").innerHTML = sobremesaPedido;
 	document.querySelector(".confirmaPrecoSobremesa").innerHTML = precoSobremesaPedido;
 
-	let precoTotal = Number(precoPratoPedido.replace("R$ ", "").replace(",",".")) + Number(precoBebidaPedido.replace("R$ ", "").replace(",",".")) + Number(precoSobremesaPedido.replace("R$ ", "").replace(",","."));
+	let precoTotal = Number(precoPratoPedido.replace("R$ ", "").replace(",","."));
+	
+	precoTotal += Number(precoBebidaPedido.replace("R$ ", "").replace(",",".")) + Number(precoSobremesaPedido.replace("R$ ", "").replace(",","."));
 
-	precoTotal = "R$ "+ precoTotal.toFixed(2).replace(".", ",");
+	let quantidadeDecimais = 2;
+	precoTotal = "R$ "+ precoTotal.toFixed(quantidadeDecimais).replace(".", ",");
 
 	document.querySelector(".confirmaPrecoTotal").innerHTML = precoTotal;
 

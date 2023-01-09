@@ -299,7 +299,7 @@ table  {
 }
 
 th {
-	font-family: 'Roboto';
+	font-family: 'Roboto', sans-serif;
 	font-style: normal;
 	font-weight: 700;
 	font-size: 22px;
@@ -351,7 +351,7 @@ td:last-child {
 
 .resumo-pedido > button:last-child {
 	margin-top: 20px;
-	font-family: 'Roboto';
+	font-family: 'Roboto', sans-serif;
 	font-style: normal;
 	font-weight: 700;
 	font-size: 20px;
